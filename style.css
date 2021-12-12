@@ -1,20 +1,22 @@
 @font-face {
   font-family: "cargo";
-  src: url(./scto-grotesk-a-regular.woff2);
+  src: url(./FormulaCondensed-Regular.woff2);
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
+  color: #3a3a3a;
   list-style: none;
   font-family: "cargo";
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
 html {
   /* overflow: hidden; */
-  background-color: #2d2d2d;
+  background-color: #3a3a3a;
   height: 2000px;
 }
 
@@ -46,10 +48,6 @@ html {
   transform: center;
 }
 
-.menu-tog.active {
-  transform: rotate(180deg);
-}
-
 .menu-tog span {
   height: 2px;
   background-color: rgb(255, 255, 255);
@@ -67,25 +65,27 @@ html {
 
 .menu-tog.active span {
   position: absolute;
-  top: 50%;
-  left: 50%;
-
+  left: 0%;
   width: 100%;
 }
 
 .menu-tog.active span:nth-child(1) {
-  transform: translate(-50%, -50%) rotate(45deg);
+  top: 40%;
+  transform: rotate(45deg);
 }
 
 .menu-tog.active span:nth-child(2) {
-  transform: translate(-50%, -50%) rotate(-45deg);
+  bottom: 40%;
+  transform: rotate(-45deg);
 }
 
 .wrapper {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .wrapper > .transition {
@@ -94,12 +94,11 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  /* background-color: rgb(0, 0, 0); */
 }
 
 ul {
   position: relative;
-  top: -10vw;
+  top: -5vh;
   z-index: 2;
   opacity: 0;
   transition: 0.5s;
@@ -116,6 +115,7 @@ ul.active {
   pointer-events: all;
 }
 
-li {
+li:hover {
   cursor: pointer;
+  opacity: 0.7;
 }

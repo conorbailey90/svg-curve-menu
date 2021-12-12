@@ -36,7 +36,7 @@ menuToggle.addEventListener('click', () => {
     setTimeout(() => {
         toggle = !toggle;
        
-    }, 500)
+    }, 300)
     if(toggle){
         ul.classList.remove('active');
 
