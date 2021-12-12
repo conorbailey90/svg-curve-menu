@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="menu-tog ">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class='wrapper'>   
+        <svg class="transition" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path class="path" stroke="black" fill='black' stroke-width="1px" dur="10s" vector-effect="non-scaling-stroke" 
+          d="M 0 100 L 100 100 100 100 0 100 C 0 0, 0 0, 0 100"/>
+            <animateMotion dur="10s" repeatCount="indefinite">
+              <mpath xlink:href="#path" />
+            </animateMotion>
+        </svg>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>PROJECTS</li>
+            <li>CONTACT</li>
+        </ul>
+      </div>
+
+      <script src="app.js"></script>
+    
+</body>
+</html>
